@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NOTES</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id = "home">
+            <header>Note Book</header>
+            <div class = "list" id = "homelist">
+                 Hello,<br>
+                 I'm Srikanth !
+                 <h1>About !<br><hr width="50%" align="center"></h1><br>
+                 <p>Create your notes , don't remember just store them !!</p>
+            </div>
+        </div>
+
+        <div id = "cat">
+            <header id = "ca">Categories</header><i class="fas fa-reply-all" id = "back"></i>
+            <div class = "list" id = "cats">
+           <div id = "per">Personal <span id = "percount">(0)</span>
+                                    <span id = "status"><i class="fas fa-lock" id = "lock"></i></span>
+          </div>
+            <div id = "work">Work <span id = "workcount">(0)</div>
+            <div id = "quote">Quote <span id = "quotecount">(0)</div>
+            <div id = "study">Study <span id = "studycount">(0)</div>
+            <div id = "leisure">Leisure <span id = "leisurecount">(0)</div>
+            <div id = "uncat">Uncatrgorised <span id = "uncatcount">(0)</div>
+            </div>
+
+            <div id = "personal">
+                <header>Personal</header>
+  <div class = "list" id = "perlist"></div>
+            </div>
+
+            <div id = "works">
+                <header>Work</header>
+  <div class = "list" id = "worklist"></div>
+            </div>
+
+            <div id = "quotes">
+                <header>Quote</header>
+  <div class = "list" id = "quotelist"></div>
+            </div>
+
+            <div id = "studys">
+                <header>Study</header>
+  <div class = "list" id = "studylist"></div>
+            </div>
+
+            <div id = "leis">
+                <header>Leisure</header>
+ <div class = "list" id = "leislist"></div>
+            </div>
+
+            <div id = "uncategorised">
+                <header>Uncategorised</header>
+  <div class = "list" id = "uncatlist"></div>
+            </div>
+        </div>
+
+
+        <div id = "recycle">
+            <header>Plane</header>
+            <div class = "list" id = "recbin">
+
+            </div>
+        </div>
+
+
+
+
+        <div id = "adform">
+            <div id = "form">
+Title:<br><br><input type = "text" id = "title" maxlength = "100"><br><br>
+Note:<br><textarea id = "main"></textarea><br><br>
+Category:<br><br><select id = "sel">
+<option value = "Uncategorised">Uncategorised</option>
+<option value = "Personal">Personal</option>
+<option value = "Work">Work</option>
+<option value = "Quote">Quote</option>
+<option value = "Study">Study</option>
+<option value = "Leisure">Leisure</option>
+
+</select><br><br>
+    <button id = "butt">Done</button>
+            </div>
+        </div>
+         <div id = "ad">+</div>
+        <nav id = "nav">
+            <div id = "cov">
+                <div id = "menu">
+                   <p id = "hom">Home</p>
+               <p id = "cate">Categories</p>
+               <p id = "bin">Plane</p>
+               <p>  <a href="https://pettemsrikanth.github.io" target="_blank">DEVELOPER</a></p>
+
+                </div>
+            </div>
+        </nav>
+
+         <div id = "icon">
+            <i class = "fas fa-bars"></i>
+        </div>
+
+
+<footer class="f">
+          <hr>All &copy; copy rights are reserved by WE FOR US
+</footer>
+
+
+
+
+
+        <script>
+            function clic() { document.getElementById("bim").parentNode.remove()}
+        </script>
+    </body>
+</html>

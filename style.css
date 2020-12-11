@@ -1,0 +1,275 @@
+
+body {
+    font-family:cursive;
+    color:white;
+    cursor:auto;
+    background-color:black;
+    user-select:none;
+    text-align:center;
+}
+
+.f{
+     text-align: center;
+     position:relative;
+     color: red;
+     margin-top: 300px;
+}
+a,#bin,#hom,#cate{
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  text-decoration-color: rgba(f,f,0,0.5);
+  font-weight: bold;
+  text-shadow:20px white;
+  border:1px double white;
+  font-size: .5rem;
+  padding: 10px;
+  padding-left: 110px;
+  padding-right: 110px;
+  box-shadow: 2px 3px 4px white;
+}
+a:hover{
+  color: white;
+  font-size: 0.7rem;
+  text-decoration: none;
+  text-align: center;
+  text-emphasis-color: #abc;
+}
+a:active{
+  color:white;
+}
+a::after{
+  color:#ff;
+}
+hr{
+  color:orange;
+  opacity: 0.5;
+}
+#home,#cat,#recycle,#adform{
+    position:relative ;
+    height:100%;
+    width:100%;
+    top:0;
+    display:none;
+    text-align:center ;
+    left:0;
+}
+
+#recycle{
+    background:linear-gradient(rbga(20,10,20,0.2),rbga(30,40,25,0.4));
+}
+
+header{
+    font-size:3rem;
+    color :rgba(25, 200, 200, 0.5);
+    margin: 20px;
+    padding: 3rem;
+    border: solid white 1px;
+}
+
+#icon{
+    position:absolute;
+    padding:5%;
+    top:0;
+    left:0;
+    font-size:40px;
+}
+
+#nav{
+    display:flex;
+    position:absolute ;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+    justify-content:left;
+    align-items:center;
+    transform:scale(0);
+}
+
+#cov{
+    height:500px;
+    width:550px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    overflow:hidden;
+    background-color: transparent;
+}
+
+#menu{
+    height:70%;
+    width:50%;
+    text-align:center ;
+    color:skyblue;
+    font-size:18px;
+}
+
+@keyframes nav{
+    0%{
+        transform:scale(0);
+        cursor: crosshair;
+      }
+    100%{
+      transform:scale(1) rotate(2888deg);
+      animation-delay: 2000;
+    }
+}
+
+#menu p{
+    cursor:pointer ;
+    transition:all 1s;
+}
+
+#menu p:hover{
+   transform:scale(1.1);
+}
+
+#ad{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    font-size:35px;
+    height:100px;
+    width:100px;
+    display:inline-flex;
+    align-items:center;
+    color:black;
+    justify-content:center;
+    box-shadow:3px 3px 2px white;
+    background-color:skyblue;
+}
+#ad:hover{
+  font-size: 45px;
+  height: 100px;
+  width:100px;
+  background-color: red;
+}
+
+.list{
+    display:grid;
+    grid-gap:10px;
+}
+
+.list div{
+    width:80%;
+    text-align:left;
+    padding:10%;
+    padding-top:5%;
+    padding-bottom:5%;
+    transition:all 1s;
+}
+
+.list div:hover{
+    transform:scale(0.9);
+}
+
+/*#per{
+    background-color:blue;
+}
+
+#work{
+    background-color:grey;
+}
+
+#quote{
+    background-color:gold;
+}
+
+#study{
+    background-color:skyblue;
+}
+
+#leisure{
+    background-color:hotpink;
+}
+
+#uncat{
+    background-color:teal;
+}*/
+
+#adform{
+    display:flex;
+    position:fixed;
+    left:0;
+    top:0;
+    justify-content:center;
+    align-items:center;
+    transform:scale(0);
+}
+
+#form{
+    position:fixed;
+    width:100%;
+    background-color:skyblue;
+    padding-top:5%;
+    padding-bottom:5%;
+    color:black;
+    border-top:2px solid green;
+    border-bottom:2px solid green;
+}
+
+#form input,textarea,select{
+    border:none;
+    background-color:transparent ;
+    color:black;
+    width:70%;
+    padding:5px;
+    font-family:amaranth;
+    border-bottom:2px solid grey;
+}
+
+
+#form input:hover,textarea:hover,select:hover,#butt:hover{
+    outline:none;
+}
+
+#butt{
+    font-size:18px;
+    padding:5px;
+    padding-right:20px;
+    font-family:amaranth;
+    padding-left:20px;
+    background-color:transparent ;
+}
+
+#status{
+    float:none;
+}
+
+#home{
+    display:block;
+}
+
+#uncategorised,#studys,#quotes,#leis,#personal,#works{
+    display:none;
+}
+
+#back{
+    font-size:40px;
+    position:absolute ;
+    padding:5%;
+    right:0px;
+    display:none;
+    top:0px;
+}
+
+#all{
+    background-color:rgba(f,f,f,0.5);
+    color:black;
+}
+
+#bim{
+    float:right;
+    color:red;
+    font-size:20px;
+}
+
+#foot{
+    display:flow-root;
+    justify-content:center;
+    align-items:center;
+    float:none;
+    font-size:16px;
+    text-transform:italic;
+}
